@@ -37,10 +37,10 @@ def extract_edges(data):
         if current_home_score == current_away_score:
             continue
 
-        [winning_team, lossing_team] = [current_home_team, current_away_team] \
+        [winning_team, losing_team] = [current_home_team, current_away_team] \
             if current_home_score > current_away_score else [current_away_team, current_home_team]
 
-        key = lossing_team + '_' + winning_team
+        key = losing_team + '_' + winning_team
 
         if key in temp_edges.keys():
             temp_edges[key][EdgesColumn.WEIGHT] += 1
