@@ -67,7 +67,7 @@ def transform_edges(mid_edges):
     print("Created edges excel file")
 
 
-df = read_file('results')
+df = read_file('results friendly world filter')
 
 df = df.drop(['date', 'tournament', 'city', 'country', 'neutral'], axis=1)
 
